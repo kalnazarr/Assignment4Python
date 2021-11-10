@@ -24,7 +24,28 @@ body VARCHAR,
 link VARCHAR
 )
 ```
+Further step is to run main.py file, you'll get the IP-address in the terminal that you need to follow, after following it, you need to add /coin after this address. 
+```
+http://127.0.0.1:5000/coin
+```
+Then you will see the page with the input field and one button, here you need to input the existing coin from the coin market, for example Bitcoin. It will afterwards output some articles, news, paragraphs regarding this coin. Also, all the parsed information will be stored in the database.
 
+# Examples
+### At the beggining you will have an empty page, except the input field and the check button. You need to enter the coin.
+![1](https://user-images.githubusercontent.com/82859085/141158434-d9e2920f-cc20-4ec9-9b7b-e022bbcef0b7.PNG)
+
+![2](https://user-images.githubusercontent.com/82859085/141158683-93e8dedd-91a8-4661-87b5-e1612212dd79.PNG)
+
+### After entering the coin and pressing the check button, you will get many articles as an output.
+
+![3](https://user-images.githubusercontent.com/82859085/141158847-073a2866-aa4d-49f7-9e26-6eaa075fdaab.PNG)
+
+### Also, here you can see how this data is stored in the database.
+
+
+![4](https://user-images.githubusercontent.com/82859085/141159166-f7105955-7309-4790-816c-f1f89d9ede23.PNG)
+
+![5](https://user-images.githubusercontent.com/82859085/141159315-e02333b7-bc2c-48e7-ba1c-2815df71337e.PNG)
 
 
 
