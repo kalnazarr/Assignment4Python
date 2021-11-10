@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> Coin </title>
+</head>
+<body> 
+    <div align = 'left'  style="padding: 35px;">
+    <form method="post" align='left'  >
+            <input type=text name=coin style="height: 50px;width:250px;background-color: gainsboro;">
+            <input type=submit value=Check style="height: 50px;width:60px;background-color: gainsboro;">
+
+    </form> 
+
+
+    {% if articles %}
+        {% for article in articles: %}
+
+            <div style='width:50%;padding: auto;border: 5px, black;background-color: blanchedalmond;'>
+
+            <p>---------------------------------------------------------------------------------------------------------</p>
+
+            <h5 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">{{article.title}}</h5>
+
+            <p style="font-family: 'Times New Roman', Times, serif;">{{article.body}}</p>
+
+            <a href="{{article.link}}">{{article.link}}</a><br><br>
+            
+            <p>---------------------------------------------------------------------------------------------------------</p>
+
+            </div>
+        {% endfor %}
+    {% endif %}
+    </div>
+</body>
+</html>
